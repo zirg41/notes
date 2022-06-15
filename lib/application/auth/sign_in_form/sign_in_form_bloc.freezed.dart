@@ -825,7 +825,7 @@ abstract class SignInWithGooglePressed implements SignInFormEvent {
 mixin _$SignInFormState {
   EmailAddress get emailAddress => throw _privateConstructorUsedError;
   Password get password => throw _privateConstructorUsedError;
-  bool get isErrorMessagesShown => throw _privateConstructorUsedError;
+  AutovalidateMode get validateMode => throw _privateConstructorUsedError;
   bool get isSubmitting => throw _privateConstructorUsedError;
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
       throw _privateConstructorUsedError;
@@ -843,7 +843,7 @@ abstract class $SignInFormStateCopyWith<$Res> {
   $Res call(
       {EmailAddress emailAddress,
       Password password,
-      bool isErrorMessagesShown,
+      AutovalidateMode validateMode,
       bool isSubmitting,
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
@@ -861,7 +861,7 @@ class _$SignInFormStateCopyWithImpl<$Res>
   $Res call({
     Object? emailAddress = freezed,
     Object? password = freezed,
-    Object? isErrorMessagesShown = freezed,
+    Object? validateMode = freezed,
     Object? isSubmitting = freezed,
     Object? authFailureOrSuccessOption = freezed,
   }) {
@@ -874,10 +874,10 @@ class _$SignInFormStateCopyWithImpl<$Res>
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      isErrorMessagesShown: isErrorMessagesShown == freezed
-          ? _value.isErrorMessagesShown
-          : isErrorMessagesShown // ignore: cast_nullable_to_non_nullable
-              as bool,
+      validateMode: validateMode == freezed
+          ? _value.validateMode
+          : validateMode // ignore: cast_nullable_to_non_nullable
+              as AutovalidateMode,
       isSubmitting: isSubmitting == freezed
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
@@ -900,7 +900,7 @@ abstract class _$$_SignInFormStateCopyWith<$Res>
   $Res call(
       {EmailAddress emailAddress,
       Password password,
-      bool isErrorMessagesShown,
+      AutovalidateMode validateMode,
       bool isSubmitting,
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
@@ -920,7 +920,7 @@ class __$$_SignInFormStateCopyWithImpl<$Res>
   $Res call({
     Object? emailAddress = freezed,
     Object? password = freezed,
-    Object? isErrorMessagesShown = freezed,
+    Object? validateMode = freezed,
     Object? isSubmitting = freezed,
     Object? authFailureOrSuccessOption = freezed,
   }) {
@@ -933,10 +933,10 @@ class __$$_SignInFormStateCopyWithImpl<$Res>
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      isErrorMessagesShown: isErrorMessagesShown == freezed
-          ? _value.isErrorMessagesShown
-          : isErrorMessagesShown // ignore: cast_nullable_to_non_nullable
-              as bool,
+      validateMode: validateMode == freezed
+          ? _value.validateMode
+          : validateMode // ignore: cast_nullable_to_non_nullable
+              as AutovalidateMode,
       isSubmitting: isSubmitting == freezed
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
@@ -955,7 +955,7 @@ class _$_SignInFormState implements _SignInFormState {
   const _$_SignInFormState(
       {required this.emailAddress,
       required this.password,
-      required this.isErrorMessagesShown,
+      required this.validateMode,
       required this.isSubmitting,
       required this.authFailureOrSuccessOption});
 
@@ -964,7 +964,7 @@ class _$_SignInFormState implements _SignInFormState {
   @override
   final Password password;
   @override
-  final bool isErrorMessagesShown;
+  final AutovalidateMode validateMode;
   @override
   final bool isSubmitting;
   @override
@@ -972,7 +972,7 @@ class _$_SignInFormState implements _SignInFormState {
 
   @override
   String toString() {
-    return 'SignInFormState(emailAddress: $emailAddress, password: $password, isErrorMessagesShown: $isErrorMessagesShown, isSubmitting: $isSubmitting, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
+    return 'SignInFormState(emailAddress: $emailAddress, password: $password, validateMode: $validateMode, isSubmitting: $isSubmitting, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
   }
 
   @override
@@ -984,7 +984,7 @@ class _$_SignInFormState implements _SignInFormState {
                 .equals(other.emailAddress, emailAddress) &&
             const DeepCollectionEquality().equals(other.password, password) &&
             const DeepCollectionEquality()
-                .equals(other.isErrorMessagesShown, isErrorMessagesShown) &&
+                .equals(other.validateMode, validateMode) &&
             const DeepCollectionEquality()
                 .equals(other.isSubmitting, isSubmitting) &&
             const DeepCollectionEquality().equals(
@@ -996,7 +996,7 @@ class _$_SignInFormState implements _SignInFormState {
       runtimeType,
       const DeepCollectionEquality().hash(emailAddress),
       const DeepCollectionEquality().hash(password),
-      const DeepCollectionEquality().hash(isErrorMessagesShown),
+      const DeepCollectionEquality().hash(validateMode),
       const DeepCollectionEquality().hash(isSubmitting),
       const DeepCollectionEquality().hash(authFailureOrSuccessOption));
 
@@ -1010,7 +1010,7 @@ abstract class _SignInFormState implements SignInFormState {
   const factory _SignInFormState(
       {required final EmailAddress emailAddress,
       required final Password password,
-      required final bool isErrorMessagesShown,
+      required final AutovalidateMode validateMode,
       required final bool isSubmitting,
       required final Option<Either<AuthFailure, Unit>>
           authFailureOrSuccessOption}) = _$_SignInFormState;
@@ -1020,7 +1020,7 @@ abstract class _SignInFormState implements SignInFormState {
   @override
   Password get password => throw _privateConstructorUsedError;
   @override
-  bool get isErrorMessagesShown => throw _privateConstructorUsedError;
+  AutovalidateMode get validateMode => throw _privateConstructorUsedError;
   @override
   bool get isSubmitting => throw _privateConstructorUsedError;
   @override
