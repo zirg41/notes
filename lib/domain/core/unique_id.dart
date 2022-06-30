@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:notes/domain/core/failures.dart';
 import 'package:notes/domain/core/value_objects.dart';
+import 'package:uuid/uuid.dart';
 
 class UniqueId extends ValueObject<String> {
   @override
@@ -8,11 +9,8 @@ class UniqueId extends ValueObject<String> {
 
   factory UniqueId() {
     return UniqueId._(
-        // TODO Replace this code
-        right('r'));
-    // to this:
-    // right(Uuid().v1())
-    // and add uuid package to pubspec.yaml
+      right(const Uuid().v1()),
+    );
   }
 
   factory UniqueId.fromUniqueString(String input) {
