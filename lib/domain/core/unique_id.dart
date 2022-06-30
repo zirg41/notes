@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:notes/domain/core/failures.dart';
-import 'package:notes/domain/core/value_objects.dart';
+import 'failures.dart';
+import 'value_objects.dart';
 import 'package:uuid/uuid.dart';
 
 class UniqueId extends ValueObject<String> {

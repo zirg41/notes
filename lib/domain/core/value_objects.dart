@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:notes/domain/core/errors.dart';
+import 'errors.dart';
 
 import 'failures.dart';
 

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:notes/domain/core/unique_id.dart';
+import '../core/unique_id.dart';
 
 part 'user.freezed.dart';
 
